@@ -178,8 +178,8 @@ class InstallCppComponents(install):
                 moe_python_library_base = libdir_base
 
         moe_python_include_dir = includepy
-        moe_python_library = os.path.join(moe_python_library_base, instsoname)
-
+        # moe_python_library = os.path.join(moe_python_library_base, instsoname)
+        moe_python_library = "/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0"
         # Print the Python paths we found so that the user can verify them if something goes wrong.
         print 'PYTHON_INCLUDE_DIR (Expected full path to where Python.h is found): {0:s}'.format(moe_python_include_dir)
         print 'PYTHON_LIBRARY (Expected path to Python shared object; e.g., libpython2.7.so or .dylib): {0:s}'.format(moe_python_library)
